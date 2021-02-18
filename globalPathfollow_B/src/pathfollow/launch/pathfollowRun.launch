@@ -1,0 +1,51 @@
+<launch>
+  <arg name="topic1"    default = "/trajectory"/>
+
+  <arg name="topic2" default = "/cmd_vel" />
+
+  <arg name="topic3" default = "/odometry/filtered" />
+
+  <node pkg = "pathfollow" type = "globalpathfollow.py" name="follow"/>
+
+    <param name="k1" type="double" value="1.0" />
+
+    <param name="k2" type="double" value="1.0" />
+
+    <param name="theta1" type="double" value="1.0" />
+
+    <param name="theta2" type="double" value="1.0" />
+
+    <param name="vr" type="double" value="0.5" />
+
+    <param name="drvr" type="double" value="0.0" />
+
+    <param name="maxLinearSpeed" type="double" value="0.5" />
+
+    <param name="minLinearSpeed" type="double" value="0.0" />
+
+    <param name="maxAcc" type="double" value="0.2" />
+
+    <param name="maxAngularSpeed" type="double" value="0.78" />
+
+    <param name="sampleNum" type="double" value="1000" />
+
+    <param name="dt" type="double" value="0.1" />
+
+    <param name="path_topic"    value = "$(arg topic1)"/>
+
+    <param name="cmd_vel_topic" value = "$(arg topic2)"/>
+
+    <param name="odom_topic" value = "$(arg topic3)"/>
+
+</launch>
+
+
+
+
+
+
+
+
+
+
+

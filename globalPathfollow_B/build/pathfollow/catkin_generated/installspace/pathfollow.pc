@@ -1,0 +1,8 @@
+prefix=/home/czp/globalPathfollow_B/install
+
+Name: pathfollow
+Description: Description of pathfollow
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lpathfollow
+Requires: message_runtime geometry_msgs nav_msgs roscpp rospy sensor_msgs std_msgs tf

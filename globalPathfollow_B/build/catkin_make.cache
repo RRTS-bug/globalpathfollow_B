@@ -1,0 +1,2 @@
+pathfollow
+-DCATKIN_DEVEL_PREFIX=/home/czp/globalPathfollow_B/devel -DCMAKE_INSTALL_PREFIX=/home/czp/globalPathfollow_B/install -G Unix Makefiles
